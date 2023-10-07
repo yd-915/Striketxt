@@ -1,8 +1,12 @@
 {
   "name": "striketext",
   "version": "1.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "description": "Farewell, fiat. You will not be missed..."
   "main": "index.js",
+   "engines": {
+    "node": "18.18.0",
+    "npm": "9.8.1"
+  },
   "scripts": {
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
