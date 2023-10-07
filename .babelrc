@@ -18,6 +18,7 @@
     "@babel/plugin-syntax-import-meta",
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-proposal-json-strings",
+    "@babel/plugin-syntax-jsx",
     [
       "@babel/plugin-proposal-decorators",
       {
