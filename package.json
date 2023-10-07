@@ -1,7 +1,7 @@
 {
   "name": "striketext",
   "version": "1.0.0",
-  "description": "Farewell, fiat. You will not be missed..."
+  "description": "Farewell, fiat. You will not be missed...",
   "main": "index.js",
    "engines": {
     "node": "18.18.0",
