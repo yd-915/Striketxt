@@ -7,7 +7,6 @@ const passport = require('passport')
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
 const db = require('./db')
 const sessionStore = new SequelizeStore({db})
-const PORT = process.env.PORT || 8080
 const app = express()
 const socketio = require('socket.io')
 module.exports = app
@@ -94,12 +93,10 @@ const createApp = () => {
   })
 }
 
-const startListening = () => {
-  // start listening (and create a 'server' object representing our server)
-   const server = app.listen(PORT, () =>
-    console.log(`Going live on port ${PORT}`)
-  )
-
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
   // set up our socket control center
   const io = socketio(server)
   require('./socket')(io)
