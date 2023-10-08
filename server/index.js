@@ -96,9 +96,9 @@ const createApp = () => {
 
 const startListening = () => {
   // start listening (and create a 'server' object representing our server)
-  server.listen(PORT, () => {
-    console.log("App is running on port " + port);
-});
+   const server = app.listen(PORT, () =>
+    console.log(`Going live on port ${PORT}`)
+  )
 
   // set up our socket control center
   const io = socketio(server)
