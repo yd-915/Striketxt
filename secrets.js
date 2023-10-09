@@ -1,5 +1,1 @@
-GOOGLE_CLIENT_ID=451488821164-2hkmj2t6473vb1nndphphmmhgufj0j8g.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=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
-GOOGLE_CALLBACK=https://striketxt.vercel.app/
-twilioSid=ACcb1b9e5e59f2e932b1c02a9cecd7d2b8
-twilioAuthToken=821f69d53eeb9b6bb4533d87b16091a8
+
