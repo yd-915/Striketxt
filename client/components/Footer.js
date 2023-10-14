@@ -13,7 +13,7 @@ export default function Footer() {
         </Link>
       </div>
       <div>
-        <p> © LightText All Rights Reserved. 2019 </p>
+        <p> © Striketxt All Rights Reserved. 2023 </p>
       </div>
     </div>
   )
