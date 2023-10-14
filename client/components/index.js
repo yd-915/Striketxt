@@ -6,7 +6,7 @@
 export {default as Navbar} from './navbar'
 export {default as userHome} from './userHome'
 export {Login} from './auth-form'
-export {Signup} from './signUp'
+export {Signup} from './signup'
 export {default as HomePage} from './HomePage'
 export {default as SearchBar} from './searchBar'
 export {default as BitcoinsInfo} from './BitcoinsInfo'
