@@ -7,14 +7,14 @@ export default function FAQs() {
       <h1 className="faqsTitle">FAQs</h1>
       <div>
         <h2 className="question">
-          What are the advantages of the Lightning Network ?
+          Why the Lightning Network ?
         </h2>
         <span>
           <p>
             <span className="bold">Instant Payments.</span>
             <span className="description">
-              Lightning-fast blockchain payments without worrying about block
-              confirmation times. Security is enforced by blockchain
+              Lightning-fast payments without worrying about block
+              confirmation times. Security is enforced by 
               smart-contracts without creating a on-blockchain transaction for
               individual payments. Payment speed measured in milliseconds to
               seconds.{' '}
