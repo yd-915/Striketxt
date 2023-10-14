@@ -1,6 +1,6 @@
 import React from 'react'
 // import {Link} from 'react-router-dom'
-import {Signup} from './signUp'
+import {Signup} from './signup'
 import {AboutUs} from './'
 import BitcoinInfo from './BitcoinsInfo'
 
