@@ -8,8 +8,8 @@ import {Button, Form, Grid, Header, Image, Segment} from 'semantic-ui-react'
  * COMPONENT
  */
 
-const SignUp = props => {
-  const {name, displayName, handleSubmit, error} = props
+const SignUp => {
+ 
   return (
     <div className="login-form">
       {/*
@@ -75,7 +75,7 @@ const SignUp = props => {
             {error && error.response && <div> {error.response.data} </div>}
           </Form>
              { 
-            <Link to="https://first-kkhgjn.zitadel.cloud/"> {displayName} with Zitadel</Link>
+            <Link to="https://first-kkhgjn.zitadel.cloud/"> Sign up with Zitadel</Link>
            }
          
         </Grid.Column>
@@ -84,26 +84,6 @@ const SignUp = props => {
   )
 }
 
-const mapSignup = state => {
-  return {
-    name: 'signup',
-    displayName: 'Sign Up',
-    error: state.user.error
-  }
-}
-const mapDispatch = dispatch => {
-  return {
-    handleSubmit(evt) {
-      evt.preventDefault()
-      const newPhone = evt.target.phoneNumber.value
-      const userName = evt.target.userName.value
-      const email = evt.target.email.value
-      const password = evt.target.password.value
-      const phone = '+1' + newPhone
 
-      dispatch(auth(userName, email, password, phone))
-    }
-  }
-}
 
-export const Signup = connect(mapSignup, mapDispatch)(SignUp)
+export const Signup
