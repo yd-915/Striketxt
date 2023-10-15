@@ -26,7 +26,7 @@ const SignUp = props => {
     `}</style>
       <Grid textAlign="center" style={{height: '100%'}} verticalAlign="middle">
         <Grid.Column style={{maxWidth: 450}}>
-          <Header as="h2" color="blue" textAlign="center">
+          <Header as="h2" color="#F9DB52" textAlign="center">
             {/* <Image src="/images/lightbulb.png" /> */}
             {displayName} to your account
           </Header>
@@ -68,15 +68,14 @@ const SignUp = props => {
                 type="text"
                 required
               />
-              <Button type="submit" color="blue" fluid size="large">
+              <Button type="submit" color="#F9DB52" fluid size="large">
                 Sign Up
               </Button>
             </Segment>
             {error && error.response && <div> {error.response.data} </div>}
           </Form>
-          {/* <Message>
             <Link to="/auth/google"> {displayName} with Google </Link>
-          </Message> */}
+         
         </Grid.Column>
       </Grid>
     </div>
