@@ -71,11 +71,12 @@ const SignUp = props => {
               <Button type="submit" color="#F9DB52" fluid size="large">
                 Sign Up
               </Button>
-            <Link to="/auth/google"> {displayName} with Google </Link>
             </Segment>
             {error && error.response && <div> {error.response.data} </div>}
           </Form>
-            
+             { <Message>
+            <Link to="/auth/google"> {displayName} with Google </Link>
+          </Message> }
          
         </Grid.Column>
       </Grid>
