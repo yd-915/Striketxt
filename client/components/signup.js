@@ -8,7 +8,7 @@ import {Button, Form, Grid, Header, Image, Segment} from 'semantic-ui-react'
  * COMPONENT
  */
 
-const SignUp => {
+const SignUp => = {
  
   return (
     <div className="login-form">
