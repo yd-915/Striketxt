@@ -181,7 +181,7 @@ h4 {
   margin-left: 25px;
   margin-top: 10px;
   font-size: 1.2em;
-  color: #0c2550;
+  color: #FFF493;
 }
 #findUsername,
 #beforeBox {
@@ -194,7 +194,7 @@ h4 {
   margin-left: 25px;
   margin-top: 25px;
   font-size: 1.2em;
-  color: #0c2550;
+  color: #FFF493;
 }
 .result {
   font-size: 1.7em;
@@ -310,7 +310,7 @@ form.message .ui.button {
   margin-top: 70px;
   font-size: 1.5em;
   text-align: center;
-  color: #0c2550;
+  color: #FFF493;
 }
 .faqs {
   margin: 50px;
@@ -337,7 +337,7 @@ form.message .ui.button {
 }
 
 .description {
-  color: #0c2550;
+  color: #FFF493;
   margin-left: 4px;
   text-align: justify;
 }
