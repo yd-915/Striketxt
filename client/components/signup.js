@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {auth} from '../store'
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Button, Form, Grid, Header, Image, Segment} from 'semantic-ui-react'
 
 /**
@@ -74,9 +74,9 @@ const SignUp = props => {
             </Segment>
             {error && error.response && <div> {error.response.data} </div>}
           </Form>
-             { <Message>
+             { 
             <Link to="/auth/google"> {displayName} with Google </Link>
-          </Message> }
+           }
          
         </Grid.Column>
       </Grid>
