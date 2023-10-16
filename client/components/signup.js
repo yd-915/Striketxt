@@ -1,8 +1,16 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {auth} from '../store'
-import {Link} from "react-router-dom";
-import {Button, Grid, Header, Image, Segment} from 'semantic-ui-react'
+import {Link} from 'react-router-dom'
+import {
+  Button,
+  Form,
+  Grid,
+  Header,
+  Image,
+  Message,
+  Segment
+} from 'semantic-ui-react'
 
 /**
  * COMPONENT
@@ -27,7 +35,7 @@ const SignUp = props => {
       <Grid textAlign="center" style={{height: '100%'}} verticalAlign="middle">
         <Grid.Column style={{maxWidth: 450}}>
           <Header as="h2" color="blue" textAlign="center">
-            {/* <Image src="/images/lightbulb.png" /> */}
+            <Image src="/images/lightbulb.png" />
             {displayName} to your account
           </Header>
           <Form size="large" onSubmit={handleSubmit} name={name}>
@@ -68,15 +76,25 @@ const SignUp = props => {
                 type="text"
                 required
               />
-              <Button type="submit" color="yellow" fluid size="large">
+              <Form.Input
+                fluid
+                icon="bitcoin"
+                iconPosition="left"
+                placeholder="Wallet"
+                name="wallet"
+                type="password"
+                required
+              />
+
+              <Button type="submit" color="blue" fluid size="large">
                 Sign Up
               </Button>
             </Segment>
             {error && error.response && <div> {error.response.data} </div>}
           </Form>
-          {
-            <Link to="https://first-kkhgjn.zitadel.cloud/"> {displayName} with Zitadel </Link>
-          }
+          {/* <Message>
+            <Link to="/auth/google"> {displayName} with Google </Link>
+          </Message> */}
         </Grid.Column>
       </Grid>
     </div>
@@ -94,13 +112,12 @@ const mapDispatch = dispatch => {
   return {
     handleSubmit(evt) {
       evt.preventDefault()
-      const newPhone = evt.target.phoneNumber.value
-      const userName = evt.target.userName.value
       const email = evt.target.email.value
       const password = evt.target.password.value
-      const phone = '+1' + newPhone
-
-      dispatch(auth(userName, email, password, phone))
+      const phone = evt.target.phoneNumber.value
+      const wallet = evt.target.wallet.value
+      const userName = evt.target.userName.value
+      dispatch(auth(userName, email, password, phone, wallet))
     }
   }
 }
