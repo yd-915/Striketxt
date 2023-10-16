@@ -8,8 +8,8 @@ import {Button, Form, Grid, Header, Image, Segment} from 'semantic-ui-react'
  * COMPONENT
  */
 
-const SignUp = "sign up through zitadel"; {
- 
+const SignUp = props =>  {
+ const {displayName} = props
   return (
     <div className="login-form">
       {/*
@@ -30,7 +30,7 @@ const SignUp = "sign up through zitadel"; {
             {/* <Image src="/images/lightbulb.png" /> */}
             {displayName} to your account
           </Header>
-          <Form size="large" onSubmit={handleSubmit} name={name}>
+          <Form size="large">
             <Segment stacked>
               <Form.Input
                 fluid
@@ -72,7 +72,7 @@ const SignUp = "sign up through zitadel"; {
                 Sign Up
               </Button>
             </Segment>
-            {error && error.response && <div> {error.response.data} </div>}
+           
           </Form>
              { 
             <Link to="https://first-kkhgjn.zitadel.cloud/"> Sign up with Zitadel</Link>
@@ -86,4 +86,4 @@ const SignUp = "sign up through zitadel"; {
 
 
 
-export const Signup
+export const Signup = connect(SignUp)
