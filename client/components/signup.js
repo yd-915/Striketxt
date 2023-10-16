@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {auth} from '../store'
 import {Link} from "react-router-dom";
-import {Button, Form, Grid, Header, Image, Segment} from 'semantic-ui-react'
+import {Button, Grid, Header, Image, Segment} from 'semantic-ui-react'
 
 /**
  * COMPONENT
@@ -30,53 +30,10 @@ const SignUp = props =>  {
             {/* <Image src="/images/lightbulb.png" /> */}
             {displayName} to your account
           </Header>
-          <Form size="large">
-            <Segment stacked>
-              <Form.Input
-                fluid
-                icon="user"
-                iconPosition="left"
-                placeholder="User name"
-                name="userName"
-                type="text"
-                required
-              />
-              <Form.Input
-                fluid
-                icon="mail"
-                iconPosition="left"
-                placeholder="E-mail address"
-                name="email"
-                type="text"
-                required
-              />
-              <Form.Input
-                fluid
-                icon="lock"
-                iconPosition="left"
-                placeholder="Password"
-                name="password"
-                type="password"
-                required
-              />
-              <Form.Input
-                fluid
-                icon="phone"
-                iconPosition="left"
-                placeholder="Phone Number"
-                name="phoneNumber"
-                type="text"
-                required
-              />
-              <Button type="submit" color="#F9DB52" fluid size="large">
-                Sign Up
-              </Button>
-            </Segment>
-           
-          </Form>
-             { 
+   
+             
             <Link to="https://first-kkhgjn.zitadel.cloud/"> Sign up with Zitadel</Link>
-           }
+           
          
         </Grid.Column>
       </Grid>
