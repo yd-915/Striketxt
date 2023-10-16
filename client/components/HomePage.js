@@ -1,7 +1,6 @@
 import React from 'react'
 // import {Link} from 'react-router-dom'
 import {Signup} from './signUp'
-import {AboutUs} from './'
 import BitcoinInfo from './BitcoinsInfo'
 
 export default function HomePage() {
@@ -74,7 +73,7 @@ export default function HomePage() {
         </div>
       </div>
       <div>
-        <AboutUs />
+      
       </div>
     </div>
   )
