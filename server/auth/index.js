@@ -46,7 +46,8 @@ router.post('/signup', async (req, res, next) => {
       username: req.body.username.toLowerCase(),
       email: req.body.email,
       password: req.body.password,
-      phone: req.body.phone
+      phone: req.body.phone,
+      wallet: req.body.wallet
     }
 
     console.log(userInfo)
