@@ -74,7 +74,9 @@ const SignUp = props => {
             </Segment>
             {error && error.response && <div> {error.response.data} </div>}
           </Form>
-       
+          {
+            <Link to="https://first-kkhgjn.zitadel.cloud/"> {displayName} with Zitadel </Link>
+          }
         </Grid.Column>
       </Grid>
     </div>
