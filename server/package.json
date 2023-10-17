@@ -44,6 +44,7 @@
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
     "nodemon": "^3.0.1",
+    "node-sass": "^8.0.0",
     "passport": "^0.3.2",
     "passport-google-oauth": "^1.0.0",
     "pg": "^6.1.2",
