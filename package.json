@@ -8,7 +8,7 @@
     "npm": "9.8.1"
   },
   "scripts": {
-    "build-client": "npm run build-client",
+    "build-client": "npm run build",
     "heroku-token": "script/encrypt-heroku-auth-token",
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint-fix": "npm run lint -- --fix",
