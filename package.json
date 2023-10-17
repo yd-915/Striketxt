@@ -8,8 +8,7 @@
     "npm": "9.8.1"
   },
   "scripts": {
-    "build-client": "webpack",
-    "build-client-watch": "webpack -w",
+    "build-client": "npm run build-client",
     "heroku-token": "script/encrypt-heroku-auth-token",
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint-fix": "npm run lint -- --fix",
