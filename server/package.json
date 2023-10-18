@@ -5,7 +5,7 @@
   "main": "index.js",
  
    "scripts": {
-    "build": "yarn build",
+    "build": "tsc",
     "heroku-token": "script/encrypt-heroku-auth-token",
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint-fix": "npm run lint -- --fix",
@@ -14,7 +14,7 @@
     "prettify": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
     "postinstall": "touch secrets.js",
     "seed": "node script/seed.js",
-    "start": "node server",
+    "start": "ts-node index.js",
     "start-dev": "npm run start-server",
     "start-server": "nodemon server",
     "test": "NODE_ENV='test' mocha \"./server/**/*.spec.js\" \"./client/**/*.spec.js\" \"./script/**/*.spec.js\" --require @babel/polyfill --require @babel/register"
